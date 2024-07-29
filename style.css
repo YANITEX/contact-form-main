@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: karla ;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.64);
+}
+body{
+    background-color:  hsl(148, 38%, 91%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+sup{
+    color: hsl(169, 82%, 27%);
+}
+
+form{
+    border-radius: 20px;
+    background-color: white;
+    padding: 40px;
+    margin: 20px;
+}
+form h1{
+    color: hsl(187, 24%, 22%);
+    font-weight: 700;
+}
+form .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 700px;
+}
+ form .content * input {
+    cursor: pointer;
+}
+form .content div input{
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+
+}
+form .content div input:focus{
+    outline: none;
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+
+form .content div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    
+}
+
+
+
+
+form .content .email{
+    width: 100%;
+}
+
+
+form .content .query-type div{
+    flex-flow: row wrap;
+    gap: 20px;
+}
+form .content .query-type div label{
+    cursor: pointer;
+    width: 100%;
+}
+form .content .query-type div div{
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+    gap: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+form .content .query-type{
+    width: 100%;
+}
+form .content .query-type .selected{
+    background-color:hsl(148, 38%, 91%) ;
+}
+
+form .content .message textarea{
+    resize: none;
+    padding:  10px 20px;
+    font-size: larger;
+    line-height: 30px;
+    border: 2px solid hsl(186, 15%, 59%);
+    border-radius: 10px;
+    
+}
+form .content .message{
+    flex-grow: 1;
+    width: 100%;
+}
+form .content .message textarea:focus{
+    outline: none;
+    border: 2px solid hsl(169, 82%, 27%);
+    width: 100%;
+}
+
+form .content .condition{
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+}
+form .content .condition input{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+form .content .condition label{
+    cursor: pointer;
+}
+form .submit input{
+    background-color:hsl(169, 82%, 27%);
+    border: none;
+    color: white;
+    transition: background-color 0.1s;
+}
+form .submit input:active{
+    background-color:hsl(169, 82%, 22%);
+}
+
+form .content div .error {
+    border: 1px solid hsl(0, 66%, 54%);
+} 
+form .content .nameError::after{
+    content: 'This field is requierd';
+    color: hsl(0, 66%, 54%);
+}
+
+form .content .queryError::after{
+    content: 'please a select query type';
+    color: hsl(0, 66%, 54%);
+}
+form .content .emailError::after{
+    content: 'Please enter a valid email address';
+    color: hsl(0, 66%, 54%);
+}
+form .content .conditionError::after{
+    content: 'To submit this form, Please consent to being contacted';
+    color: hsl(0, 66%, 54%);
+}
+
+.success {
+    display: none;
+    background-color:hsla(171, 87%, 12%, 0.927) ;
+    padding: 20px  30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    opacity: 1;
+    animation-name: flach;
+    animation: fadeIn 2s ease-in-out;
+}
+.success h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    
+}
+.success p{
+    color: rgba(255, 255, 255, 0.741);
+    margin-top: 20px;
+    
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+
+
+</head>
+<body>
+  <div class="success">
+    <h3><img src="assets/images/icon-success-check.svg" alt="&#x2611;"> Message Sent!</h1>
+    <p>Thanks for completing the form.We'll be in touch soon!</p>
+  </div>
+  <form action="">
+    <h1>Contact Us</h1>
+    <div class="content">
+
+        <div class="firstName">
+          <label for="firstName">
+            First Name <sup>*</sup>
+          </label>
+          <input type="text"  id="firstName" >
+        </div>
+        <div class="lastName">
+          <label for="lastName">
+            Last Name <sup>*</sup>
+          </label>
+          <input type="text"  id="lastName" >
+        </div>
+        <div class="email">
+          <label for="email">
+            Email Address <sup>*</sup>
+          </label>
+          <input type="email"  id="email" >
+        </div>
+
+        <div class="query-type">
+          <label >
+            Query Type <sup>*</sup>
+          </label>
+          <div>
+              <div class="query1">
+                <input type="radio" name="query" id="query1">
+                <label for="query1">General Enquiry</label>
+              </div>
+              <div class="query2">
+                <input type="radio" name="query" id="query2" >
+                <label for="query2">Support Request</label>
+              </div>
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">Message <sup>*</sup></label>
+          <textarea name="message" id="message" rows="3"></textarea>
+        </div>
+        <div class="condition">
+          <input type="checkbox" name="condition" id="condition" >
+          <label for="condition">
+            I consent to being contacted by the team <sup>*</sup>
+          </label>
+        </div>
+        <div class="submit">
+          <input type="submit" name="submit" id="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/YANITEX" target="_blank">Yanis ferhat</a>.
+    </div>
+  </footer>
+<script src="index.js"></script>
+</body>
+</html>
